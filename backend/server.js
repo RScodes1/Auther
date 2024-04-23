@@ -9,12 +9,13 @@ app.get('/',(req,res)=>{
     res.send({msg: "hello"});
 })
 
+
 app.listen(process.env.PORT,async()=>{
     try {
         await connection
         console.log("mongodb started");
         console.log(`server successfully started in http://localhost:${process.env.PORT}`);
-    } catch (error) {
-         console.log("error", error);
+    } catch (err) {
+         console.log("error", err);
     }
 })
