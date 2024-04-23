@@ -1,6 +1,6 @@
-const express = require('express');
+const express = require("express");
 
-const app = express()
+const app = express();
 require('dotenv').config()
 
 const { connection } = require('./models/user.model')
