@@ -4,15 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <style>
+         body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .login-container{
+        border : solid rgb(58, 56, 56) 0.5px;
+        border-radius: 14px;
+        height: 450px;
+        width : 350px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    form input{
+       height: 35px;
+       width: 220px;
+       border-radius: 3px;
+        border : 0.5px black solid;
+       padding: 1px 3px ;
+    }
+    form button {
+        height: 29;
+       width: 225px;
+       color : white;
+       background-color: rgb(26, 116, 250);
+
+       border : none;
+       border-radius: 4px;
+       padding: 7px;
+       
+    }
+    form button:hover{
+        background-color: rgb(16, 134, 197);
+
+    }
+    </style>
 </head>
+
 <body>
     <div class="login-container">
-        <h2>Login</h2>
-        <form>
+        <h1 style="color: rgb(122, 122, 122); text-align: center; " >Login</h1>
+         <p style="text-align: center;" >to your account!</p>
+         <form style="display: flex; flex-direction: column; width: 34vh; margin-left: auto; margin-right: auto; gap : 10px ">
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <button>Login</button>
         </form>
+        <p style="text-align: center; font-size: 13px; " >or continue with these social profile</p>
+        <div style="display: flex; flex-direction: row; gap:4px; margin-right: auto; margin-left: auto; "  id="social-profiles">
+            <a href="#"><img src="" alt="F"></a>
+            <a href="#"><img src="" alt="G"></a>
+            <a href="#"><img src="" alt="T"></a>
+            <a href="#"><img src="github-icon.png" alt="G"></a>
+        </div>
+        <p style="text-align: center;" >Create an account? <a href="signup.html">Register</a></p>
     </div>
     
 </body>
